@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>WebApi Composition Extensions</title>
+    <authors>Jonatan Pedersen</authors>
+    <owners>Jonatan Pedersen</owners>
+    <licenseUrl>https://github.com/Bocami/webapi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Bocami/webapi</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WebApi Composition Extensions</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>Command Query Separation</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.0" />
+    </dependencies>
+  </metadata>
+</package>
