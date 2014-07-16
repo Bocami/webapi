@@ -11,6 +11,9 @@ namespace Bocami.Practices.WebApi
 
         public CompositeHttpControllerTypeResolver(params IHttpControllerTypeResolver[] httpControllerTypeResolvers)
         {
+            if (httpControllerTypeResolvers == null)
+                throw new ArgumentNullException("httpControllerTypeResolvers");
+
             this.httpControllerTypeResolvers = httpControllerTypeResolvers;
         }
 
