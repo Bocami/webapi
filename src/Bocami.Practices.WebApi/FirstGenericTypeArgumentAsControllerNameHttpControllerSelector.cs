@@ -26,7 +26,19 @@ namespace Bocami.Practices.WebApi
         {
             return controllerTypes
                         .Where(o => o.GenericTypeArguments.Any())
-                        .ToDictionary(o => o.GenericTypeArguments.Select(t => t.Name).First(), o => o, StringComparer.InvariantCultureIgnoreCase);
+                        .ToDictionary(GetControllerName, StringComparer.InvariantCultureIgnoreCase);
+        }
+        
+        public static string GetControllerName(Type controllerType)
+        {
+            var actualControllerName = controllerType.Name.Substring(0, controllerType.Name.LastIndexOf("Controller", StringComparison.InvariantCultureIgnoreCase));
+
+            var controllerName = controllerType.GenericTypeArguments.First().Name;
+
+            if (controllerName.EndsWith(actualControllerName))
+                controllerName = controllerName.Remove(controllerName.LastIndexOf(actualControllerName, StringComparison.InvariantCultureIgnoreCase));
+
+            return controllerName;
         }
 
         public IDictionary<string, HttpControllerDescriptor> GetControllerMapping()
@@ -39,7 +51,7 @@ namespace Bocami.Practices.WebApi
             if (request == null)
                 throw new ArgumentNullException("request");
 
-            var controllerName = GetControllerName(request);
+            var controllerName = GetRequestControllerName(request);
 
             if (controllerName == null)
                 return null;
@@ -54,7 +66,7 @@ namespace Bocami.Practices.WebApi
             return new HttpControllerDescriptor(configuration, controllerName, controllerType);
         }
 
-        private string GetControllerName(HttpRequestMessage request)
+        private string GetRequestControllerName(HttpRequestMessage request)
         {
             if (request == null)
                 throw new ArgumentNullException("request");

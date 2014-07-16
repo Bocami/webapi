@@ -18,6 +18,7 @@ namespace Bocami.Practices.WebApi
         {
             return this.httpControllerTypeResolvers
                 .SelectMany(a => a.GetControllerTypes(assembliesResolver))
+                .Distinct()
                 .ToList();
         }
     }

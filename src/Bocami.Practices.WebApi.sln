@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bocami.Practices.WebApi", "Bocami.Practices.WebApi\Bocami.Practices.WebApi.csproj", "{80CFB4EA-6398-46C2-9EFC-46FA5EDC198D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bocami.Practices.WebApi.Tests", "Bocami.Practices.WebApi.Tests\Bocami.Practices.WebApi.Tests.csproj", "{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{80CFB4EA-6398-46C2-9EFC-46FA5EDC198D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80CFB4EA-6398-46C2-9EFC-46FA5EDC198D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80CFB4EA-6398-46C2-9EFC-46FA5EDC198D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
