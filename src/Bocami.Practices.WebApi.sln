@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bocami.Practices.WebApi", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bocami.Practices.WebApi.Tests", "Bocami.Practices.WebApi.Tests\Bocami.Practices.WebApi.Tests.csproj", "{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bocami.Practices.WebApi.Command", "Bocami.Practices.WebApi.Command\Bocami.Practices.WebApi.Command.csproj", "{D84EFB86-7B20-492F-A61D-40B06A1CA144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bocami.Practices.WebApi.Query", "Bocami.Practices.WebApi.Query\Bocami.Practices.WebApi.Query.csproj", "{08AD33E3-0DE1-4AE0-A392-4D90955BE1A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70FD42A5-6C01-46F2-AED7-4DC86A1D7840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D84EFB86-7B20-492F-A61D-40B06A1CA144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D84EFB86-7B20-492F-A61D-40B06A1CA144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D84EFB86-7B20-492F-A61D-40B06A1CA144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D84EFB86-7B20-492F-A61D-40B06A1CA144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AD33E3-0DE1-4AE0-A392-4D90955BE1A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AD33E3-0DE1-4AE0-A392-4D90955BE1A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AD33E3-0DE1-4AE0-A392-4D90955BE1A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AD33E3-0DE1-4AE0-A392-4D90955BE1A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

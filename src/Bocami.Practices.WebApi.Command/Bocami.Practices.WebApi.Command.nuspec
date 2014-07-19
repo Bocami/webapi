@@ -3,13 +3,13 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <title>WebApi</title>
+    <title>WebApi Command</title>
     <authors>Jonatan Pedersen</authors>
     <owners>Jonatan Pedersen</owners>
-    <licenseUrl>https://github.com/Bocami/webapi/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/Bocami/webapi</projectUrl>
+    <licenseUrl>https://github.com/Bocami/command-webapi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Bocami/command-webapi</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>WebApi</description>
+    <description>WebApi Command</description>
     <copyright>Copyright 2014</copyright>
   </metadata>
 </package>
